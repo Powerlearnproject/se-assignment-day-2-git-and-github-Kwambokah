@@ -1,0 +1,310 @@
+##Explain the fundamental concepts of version control and why GitHub is a popular tool for managing versions of code. How does version control help in maintaining project integrity?
+-Version control is a system that records changes to a file or set of files over time so that you can recall specific versions later. 
+  Here are the fundamental concepts of version control:
+Repository: A repository is a central file storage location where all the versions of a project are stored. It contains all the files and the history of changes made to those files.
+Commit: A commit is an individual change to a file (or set of files). It's like a snapshot of your project at a particular point in time. Each commit has a unique identifier (a SHA-1 hash in Git) and includes a message describing the changes.
+Branch: A branch is a parallel version of a repository. It allows you to work on different versions of your project simultaneously. The main branch (often called master or main) is the default branch. You can create other branches to develop features or fix bugs without affecting the main branch.
+Merge: Merging is the process of integrating changes from one branch into another. For example, when a feature developed in a separate branch is complete, it can be merged back into the main branch.
+Clone: Cloning is the act of creating a copy of a repository. This allows you to work on the project locally on your own machine.
+Pull/Push: Pulling is the act of fetching and merging changes from a remote repository to your local repository. Pushing is the act of sending your local changes to a remote repository.
+Conflict: A conflict occurs when two branches have changes that cannot be automatically merged. This usually happens when the same part of a file is modified in different ways in each branch. Conflicts must be resolved manually.
+  It is popular for several reasons:
+Collaboration: GitHub makes it easy for multiple developers to work on the same project. It provides tools for code review, issue tracking, and project management.
+Open Source: GitHub hosts a vast number of open-source projects, making it a hub for collaboration and innovation. Developers can contribute to projects, fork repositories, and share their own work.
+Community and Network: GitHub has a large and active community. Developers can follow each other, star repositories, and contribute to discussions, which fosters a sense of community and collaboration.
+Integration: GitHub integrates with many other tools and services, such as continuous integration/continuous deployment (CI/CD) pipelines, project management tools, and code quality services.
+User Interface: GitHub provides a user-friendly web interface that makes it easy to navigate repositories, view changes, and manage projects.
+ How Version Control Helps in Maintaining Project Integrity
+History and Accountability: Version control keeps a complete history of changes, allowing you to see who made what changes and when. This accountability is crucial for debugging and understanding the evolution of a project.
+Branching and Isolation: By using branches, developers can work on new features or bug fixes in isolation. This ensures that the main branch remains stable and deployable at all times.
+Conflict Resolution: Version control systems provide tools to manage and resolve conflicts, ensuring that changes from different developers can be integrated smoothly.
+Backup and Recovery: Since the repository contains the entire history of the project, it acts as a backup. If something goes wrong, you can revert to a previous state.
+Collaboration: Version control systems facilitate collaboration by allowing multiple developers to work on the same project simultaneously. Changes can be merged, and conflicts can be resolved systematically.
+Code Reviews: Version control systems like GitHub provide tools for code reviews, which help maintain code quality and catch potential issues early.
+
+
+##Describe the process of setting up a new repository on GitHub. What are the key steps involved, and what are some of the important decisions you need to make during this process?
+Key Steps to Set Up a New Repository on GitHub
+-Sign In to GitHub:
+Go to GitHub and sign in to your account. If you don’t have an account, you’ll need to create one.
+-Create a New Repository:
+Click on the + sign in the upper right corner of the GitHub dashboard and select New repository from the dropdown menu.
+-Repository Settings:
+Repository Name: Choose a name for your repository. This should be descriptive and relevant to the project.
+Description: Optionally, add a description to provide more context about the repository.
+Visibility: Choose between Public and Private.
+Public: Anyone can see the repository. This is ideal for open-source projects.
+Private: Only you and the people you specify can access the repository. This is suitable for proprietary or sensitive projects.
+-Initialize this repository with a README: This option creates an initial README.md file in your repository. It’s a good practice to include a README file to provide an overview of your project.
+-Add .gitignore: This option allows you to specify files and directories that should be ignored by Git. You can select a template based on the programming language or framework you’re using.
+-Choose a license: A license tells others what they can and cannot do with your code. GitHub provides a list of common open-source licenses to choose from.
+-Create Repository:
+After filling in the details, click the Create repository button. Your new repository will be created and you’ll be taken to the repository’s main page.
+
+Important Decisions During the Process
+-Repository Name:
+Choose a name that is meaningful and reflects the purpose of the project. It should be easy to remember and type.
+-Visibility:
+Decide whether your project should be public or private. Consider the nature of the project and who should have access to it.
+-README File:
+Including a README file is highly recommended. It serves as the front page of your repository and provides essential information about the project, such as its purpose, how to set it up, and how to contribute.
+-.gitignore File:
+Adding a .gitignore file helps prevent unnecessary files (like build artifacts, log files, or local configuration files) from being tracked by Git. This keeps your repository clean and focused on the actual source code.
+-License:
+Choosing the right license is crucial, especially for open-source projects. It defines how others can use, modify, and distribute your code. Common licenses include MIT, Apache 2.0, and GP
+
+
+## Discuss the importance of the README file in a GitHub repository. What should be included in a well-written README, and how does it contribute to effective collaboration?
+Importance of the README File
+-First Impression:The README file is often the first thing people see when they visit your repository. It sets the tone for the project and provides a quick overview.
+-Project Documentation:It serves as the primary documentation for your project, explaining what it does, how to set it up, and how to use it.
+-Onboarding:A good README helps new contributors get started quickly by providing clear instructions on how to set up the development environment, run tests, and contribute to the project.
+-Communication:It communicates the purpose, goals, and status of the project, helping potential users and contributors understand its value and direction.
+-Reference:It acts as a reference guide for users and developers, providing information on how to use the software, troubleshoot issues, and understand the codebase.  
+What to Include in a Well-Written README
+-Project Title and Description:A clear and concise title and a brief description of what the project does. This should give readers a quick understanding of the project’s purpose.
+-Table of Contents:For longer READMEs, a table of contents helps users navigate the document easily.
+-Installation Instructions:Step-by-step instructions on how to install and set up the project locally. This should include any dependencies and environment setup required.
+-Usage:Examples and instructions on how to use the project. This could include code snippets, command-line instructions, or screenshots.
+-Configuration:Details on how to configure the project, including any configuration files or environment variables that need to be set.
+-Contributing:Guidelines for contributing to the project. This should include information on how to report bugs, suggest features, and submit pull requests. It’s also helpful to include coding standards and testing instructions.
+-License:Information about the project’s license. This is crucial for open-source projects to let others know how they can use your code.
+-Acknowledgments:Credit to any contributors, libraries, or resources that were used in the project.
+-Badges:Badges for build status, code coverage, and other metrics can provide quick insights into the health and status of the project.
+-Contact Information:Information on how to contact the maintainers for support or questions. This could be an email address, a link to a discussion forum, or a link to an issue tracker.
+
+How a Well-Written README Contributes to Effective Collaboration
+-Clarity and Understanding:A clear and comprehensive README ensures that all collaborators have a consistent understanding of the project’s goals, setup, and usage. This reduces confusion and miscommunication.
+-Efficient Onboarding:New contributors can get up to speed quickly with detailed installation and setup instructions, reducing the time and effort required to start contributing.
+-Consistency:Contribution guidelines and coding standards help maintain consistency in the codebase, making it easier for multiple contributors to work together seamlessly.
+-Transparency:Clear documentation of the project’s status, known issues, and future plans helps set realistic expectations and fosters trust among collaborators.
+-Community Engagement:A well-documented project is more likely to attract contributors and users. It shows that the project is maintained and that contributions are welcome.
+-Reference Point:The README serves as a central reference point for all project-related information, making it easier for collaborators to find the information they need without having to ask around.
+
+
+## Compare and contrast the differences between a public repository and a private repository on GitHub. What are the advantages and disadvantages of each, particularly in the context of collaborative projects?
+Public Repositories
+Definition:A public repository is accessible to anyone on the internet. Anyone can view the code, fork the repository, and submit pull requests.
+Advantages:
+-Visibility and Exposure:Public repositories are visible to everyone, which can attract contributors, users, and potential collaborators. This is particularly beneficial for open-source projects.
+-Community Engagement:Public repositories can foster a community around the project. Contributors can fork the repository, make improvements, and submit pull requests, leading to a collaborative development environment.
+-Transparency:Open-source projects benefit from transparency, as anyone can review the code, suggest improvements, and report issues. This can lead to higher code quality and security.
+-Learning and Showcasing:Public repositories can serve as a portfolio for developers, showcasing their skills and projects to potential employers or collaborators.
+-No Cost:GitHub offers free public repositories, making it an attractive option for individuals and organizations looking to share their work without incurring costs.
+
+Disadvantages:
+-Lack of Privacy:Since the code is visible to everyone, sensitive information or proprietary code cannot be kept private. This can be a significant drawback for commercial projects.
+-Security Risks:Public repositories are more vulnerable to security risks, as malicious actors can easily access the code and potentially exploit vulnerabilities.
+-Spam and Abuse:Public repositories can attract spam, irrelevant issues, and pull requests, which can be time-consuming to manage.
+-Limited Control:While you can manage contributions through pull requests and code reviews, you have less control over who can view and fork your code.
+
+Private Repositories
+Definition:A private repository is accessible only to the owner and collaborators explicitly granted access. It is not visible to the public.
+Advantages:
+
+-Privacy and Security:Private repositories offer a high level of privacy and security, making them ideal for proprietary projects, sensitive information, and commercial software.
+-Controlled Access:You have full control over who can view, clone, and contribute to the repository. This is crucial for maintaining the integrity and confidentiality of the project.
+-Reduced Spam:Since the repository is not publicly accessible, it is less likely to attract spam and irrelevant contributions.
+-Internal Collaboration:Private repositories are well-suited for internal teams and organizations that need to collaborate on projects without exposing their work to the public.
+
+Disadvantages:
+-Limited Community Engagement:Private repositories do not benefit from the broader open-source community. This can limit the number of contributors and the diversity of perspectives.
+-Cost:GitHub charges for private repositories beyond a certain limit (though GitHub offers free private repositories for individual accounts with some limitations). This can be a consideration for small teams or individual developers.
+-Reduced Transparency:The lack of transparency can be a drawback for projects that could benefit from public scrutiny and community feedback.
+-Isolation:Private repositories can become isolated, with fewer opportunities for external contributions and collaborations.
+
+Context of Collaborative Projects
+Public Repositories:
+-Open-Source Projects: Ideal for open-source projects where community involvement and transparency are key.
+-Learning and Showcasing: Great for educational purposes, personal projects, and showcasing work to potential employers.
+-Community-Driven Development: Suitable for projects that thrive on community contributions and feedback.
+
+Private Repositories:
+-Proprietary Software: Essential for commercial projects and proprietary software where privacy and security are paramount.
+-Internal Teams: Best for internal teams within organizations that need to collaborate on sensitive or confidential projects.
+-Controlled Development: Suitable for projects that require strict control over who can access and contribute to the codebase.  
+
+  
+## Detail the steps involved in making your first commit to a GitHub repository. What are commits, and how do they help in tracking changes and managing different versions of your project?
+Steps to Make Your First Commit
+-Set Up Git:If you haven’t already, install Git on your local machine. You can download it from git-scm.com.
+-Configure Git with your username and email:
+git config --global user.name "Your Name"
+git config --global user.email "your.email@example.com"
+-Create a New Repository on GitHub:Follow the steps to create a new repository on GitHub as described earlier. Make sure to initialize the repository with a README file if you want to start with one.
+-Clone the Repository:Clone the repository to your local machine using the following command:
+git clone https://github.com/username/repository-name.git
+-Navigate into the cloned repository:
+cd repository-name
+Create or Modify Files:
+-Add new files or modify existing ones in your local repository. For example, you can create a new file called example.txt:
+echo "This is an example file." > example.txt
+-Stage Changes:Use the git add command to stage the changes you want to commit. You can stage all changes or specific files:
+git add example.txt
+Or stage all changes:git add .
+-Commit Changes:
+Commit the staged changes with a descriptive message:
+git commit -m "Initial commit with example.txt"
+The -m flag allows you to add a commit message directly in the command line. Commit messages should be clear and descriptive to explain what changes were made.
+-Push Changes to GitHub:Push your committed changes to the remote repository on GitHub:
+git push origin main
+If you’re using a branch other than main, replace main with your branch name.
+
+What Are Commits?
+A commit is a snapshot of your project at a specific point in time. Each commit has a unique identifier (a SHA-1 hash) and includes the following:
+-Changes: The actual changes made to the files.
+-Author: The person who made the changes.
+-Date: The date and time when the changes were made.
+-Message: A description of the changes.
+
+How Commits Help in Tracking Changes and Managing Versions
+-History and Accountability:Commits provide a detailed history of all changes made to the project. You can see who made what changes and when, which is crucial for debugging and understanding the evolution of the project.
+-Reverting Changes:If something goes wrong, you can revert to a previous commit to restore the project to a known good state. This is done using the git revert or git reset commands.
+-Branching and Merging:Commits are the building blocks of branches. You can create a new branch to develop a feature or fix a bug, make commits on that branch, and later merge it back into the main branch. This allows for parallel development without affecting the main codebase.
+-Code Reviews:Commits facilitate code reviews by providing a clear and manageable set of changes. Reviewers can look at individual commits to understand the changes and provide feedback.
+-Collaboration:In a collaborative environment, commits help manage contributions from multiple developers. Each developer can work on their own branch, make commits, and later integrate their changes into the main project.
+-Documentation:Commit messages serve as documentation for the changes made. Well-written commit messages provide context and rationale for the changes, making it easier for others (and your future self) to understand the history of the project.
+
+
+
+## How does branching work in Git, and why is it an important feature for collaborative development on GitHub? Discuss the process of creating, using, and merging branches in a typical workflow.
+How Branching Works in Git
+-Branch:A branch in Git is essentially a pointer to a specific commit. When you create a new branch, Git creates a new pointer that you can move around independently of the main branch.
+-Main Branch:The default branch in a Git repository is usually called main (formerly master). This is the primary branch where the stable version of the project resides.
+-Feature Branches:Feature branches are created to develop new features or make significant changes. These branches are typically created from the main branch and merged back into it once the feature is complete.
+-Bug Fix Branches:Similar to feature branches, bug fix branches are used to address specific issues. They are created from the main branch and merged back after the fix is complete.
+
+Importance of Branching for Collaborative Development
+-Isolation of Work:Branches allow developers to work on different tasks in isolation. This means that changes made in one branch do not affect other branches until they are merged.
+-Parallel Development:Multiple developers can work on different branches simultaneously, enabling parallel development. This speeds up the development process and allows for more efficient collaboration.
+-Code Stability:The main branch remains stable and production-ready, while new features and bug fixes are developed in separate branches. This ensures that the main codebase is always in a deployable state.
+-Code Reviews:Branches facilitate code reviews by providing a clear and manageable set of changes. Reviewers can look at individual branches to understand the changes and provide feedback.
+-Experimentation:Branches allow for experimentation without risking the stability of the main codebase. Developers can create branches to test new ideas and discard them if they don’t work out.
+
+Typical Workflow for Creating, Using, and Merging Branches
+-Create a New Branch:To create a new branch, use the git branch command followed by the branch name:
+git branch feature-branch
+Alternatively, you can create and switch to the new branch in one command:
+git checkout -b feature-branch
+-Switch to the New Branch:To switch to the newly created branch, use the git checkout command:
+git checkout feature-branch
+-Make Changes and Commit:Make the necessary changes to your files. Once you’re satisfied with the changes, stage and commit them:
+git add .
+git commit -m "Add new feature"
+-Push the Branch to GitHub:Push the branch to the remote repository on GitHub:
+git push origin feature-branch
+-Create a Pull Request:
+Go to the GitHub repository and create a pull request (PR) for the branch. A PR is a request to merge the changes from your branch into the main branch. Provide a description of the changes and request a review from collaborators.
+-Code Review and Feedback:Collaborators will review your changes, provide feedback, and suggest improvements. You can make additional commits to the branch to address the feedback.
+-Merge the Branch:Once the PR is approved, merge the branch into the main branch. This can be done directly on GitHub through the PR interface or using the command line:
+git checkout main
+git merge feature-branch
+-Delete the Branch:After merging, you can delete the feature branch to keep the repository clean:
+git branch -d feature-branch
+-And delete the remote branch:
+git push origin --delete feature-branch
+
+
+## Explore the role of pull requests in the GitHub workflow. How do they facilitate code review and collaboration, and what are the typical steps involved in creating and merging a pull request?
+Role of Pull Requests
+-Proposing Changes:Pull requests allow developers to propose changes to a codebase. These changes can be new features, bug fixes, or improvements.
+-Code Review:PRs facilitate code review by providing a platform for collaborators to comment on the proposed changes, suggest improvements, and discuss the code.
+-Collaboration:PRs enable collaboration by allowing multiple developers to work on different aspects of a project simultaneously. They provide a clear and manageable way to integrate contributions from various team members.
+-Quality Control:By requiring code reviews before merging, PRs help maintain code quality and catch potential issues early in the development process.
+-Documentation:PRs serve as documentation for the changes made to the codebase. They include a description of the changes, discussions, and the final decision to merge or reject the changes.
+
+Typical Steps in Creating and Merging a Pull Request
+-Create a New Branch:Start by creating a new branch for your changes. This isolates your work from the main branch:
+git checkout -b feature-branch
+Make Changes and Commit:
+-Make the necessary changes to your files. Once you’re satisfied with the changes, stage and commit them:
+git add .
+git commit -m "Add new feature"
+-Push the Branch to GitHub:Push the branch to the remote repository on GitHub:
+git push origin feature-branch
+-Create a Pull Request:Go to the GitHub repository and click on the Pull Requests tab.Click the New Pull Request button.Select the base branch (usually main) and the compare branch (your feature-branch).
+Provide a title and description for the PR. The description should explain the purpose of the changes, any related issues, and any additional context that reviewers might need.
+-Code Review:Collaborators will review your changes. They can leave comments, suggest improvements, and request changes.You can address the feedback by making additional commits to the branch. These commits will automatically be included in the PR.
+  -Continuous Integration (CI):If your project uses CI tools (e.g., GitHub Actions, Travis CI), the PR will trigger automated tests. These tests help ensure that the changes do not introduce new bugs or break existing functionality.
+-Approve the Pull Request:Once the reviewers are satisfied with the changes, they can approve the PR. Some teams require a certain number of approvals before a PR can be merged.
+-Merge the Pull Request:After the PR is approved and all CI tests pass, you can merge the PR into the main branch. GitHub provides several merge options:
+-Merge Commit: Creates a merge commit that combines the changes from the PR with the main branch.
+-Squash and Merge: Combines all the commits from the PR into a single commit before merging.
+-Rebase and Merge: Rebases the PR commits onto the main branch and then performs a fast-forward merge.
+-Choose the appropriate merge option and click the Merge button.
+-Delete the Branch:After merging, you can delete the feature branch to keep the repository clean. GitHub provides an option to delete the branch directly from the PR interface.
+
+Example Workflow
+-Create and Switch to a New Branch:
+git checkout -b feature-branch
+-Make Changes and Commit:
+echo "New feature content" > feature.txt
+git add feature.txt
+git commit -m "Add new feature"
+-Push the Branch to GitHub:
+git push origin feature-branch
+-Create a Pull Request:Go to the GitHub repository, click on the Pull Requests tab, and create a new PR for feature-branch.
+-Code Review and Feedback:Address any feedback from collaborators by making additional commits to feature-branch.
+-Approve and Merge the Pull Request:Once approved, merge the PR on GitHub using the Merge button.
+-Delete the Branch:After merging, delete the feature branch from GitHub.
+
+
+## Discuss the concept of "forking" a repository on GitHub. How does forking differ from cloning, and what are some scenarios where forking would be particularly useful?
+Forking a repository on GitHub creates a personal copy of someone else’s project. This copy is hosted under your GitHub account, allowing you to freely make changes without affecting the original repository.
+
+How Forking Differs from Cloning
+Cloning:
+-Cloning a repository creates a local copy of a repository on your machine. This local copy is linked to the remote repository, allowing you to push and pull changes.
+-Ownership: The cloned repository is still linked to the original remote repository.
+-Collaboration: Cloning is typically used when you have direct access to the repository (e.g., as a collaborator) and want to work on it locally.
+
+  Forking:
+-Forking creates a remote copy of the repository under your GitHub account.
+-Ownership: The forked repository is yours, but it retains a link to the original repository.
+-Collaboration: Forking is used when you do not have direct write access to the original repository and want to propose changes via pull requests.
+
+Scenarios Where Forking is Particularly Useful
+-Open Source Contributions:Forking is essential for contributing to open-source projects. Since you typically do not have write access to the original repository, you fork it to your account, make changes, and then submit a pull request to propose your changes.
+-Experimentation and Personal Projects:If you want to experiment with a project or use it as a starting point for your own project, forking allows you to create a separate copy where you can make changes without affecting the original project.
+-Collaborative Development:In collaborative environments, forking can be used to create personal workspaces where developers can work on features or bug fixes independently. Once the work is complete, they can submit pull requests to merge their changes into the main project.
+-Code Reviews and Quality Assurance:Forking can be used to create a sandbox environment for code reviews and quality assurance. Reviewers can fork the repository, make suggested changes, and submit pull requests for further review.
+-Educational Purposes:Forking is useful in educational settings where students can fork a repository to complete assignments or projects. They can make changes and submit their work via pull requests for evaluation.
+
+
+## Examine the importance of issues and project boards on GitHub. How can they be used to track bugs, manage tasks, and improve project organization? Provide examples of how these tools can enhance collaborative efforts.
+Importance of Issues and Project Boards
+Issues:
+-Tracking Bugs: Issues are used to report and track bugs. They provide a detailed record of the problem, including steps to reproduce, expected behavior, and actual behavior.
+-Feature Requests: Issues can be used to propose new features or enhancements. They allow stakeholders to discuss the feasibility, design, and implementation of new ideas.
+-Task Management: Issues can represent tasks or to-do items. They help break down larger projects into manageable pieces and assign responsibilities.
+-Documentation: Issues serve as documentation for the project’s history, including what problems were encountered, how they were resolved, and what features were added.
+
+Project Boards:
+
+-Visual Organization: Project boards provide a visual representation of the work that needs to be done. They help teams see the status of tasks at a glance.
+-Workflow Management: Project boards can be customized to reflect the team’s workflow, with columns representing different stages of development (e.g., To Do, In Progress, Done).
+-Collaboration: Project boards facilitate collaboration by providing a shared space where team members can see what others are working on and coordinate their efforts.
+-Prioritization: Project boards help prioritize tasks by allowing teams to move issues between columns based on their status and importance.
+
+Using Issues and Project Boards
+-Tracking BugsCreate an Issue:Go to the Issues tab in the repository and click New Issue.Provide a title and description for the bug, including steps to reproduce, expected behavior, and actual behavior.
+Assign labels such as bug, high priority, or help wanted to categorize the issue.
+-Assign and Prioritize:Assign the issue to a team member responsible for fixing it.Prioritize the issue by adding it to a project board and moving it to the appropriate column (e.g., To Do, In Progress).
+-Track Progress:As work progresses, update the issue with comments, status updates, and links to pull requests.Move the issue across columns on the project board to reflect its current status.
+
+Managing Tasks
+-Create Task Issues:Create an issue for each task or user story. Provide a clear description and acceptance criteria.Assign labels such as enhancement, task, or documentation to categorize the task.
+-Organize on a Project Board:Add the task issues to a project board. Use columns to represent different stages of the workflow (e.g., Backlog, In Progress, Review, Done).Assign tasks to team members and set due dates if necessary.
+-Monitor and Update:Regularly update the project board to reflect the current status of tasks.Use the board to conduct stand-ups or sprint planning meetings, ensuring everyone is aligned on priorities and progress.Improving Project Organization
+-Customize Workflow:Customize the project board to match the team’s workflow. For example, you might have columns for Ideas, Backlog, In Progress, Code Review, and Done.
+-Use Milestones:Create milestones to group related issues and track progress toward specific goals or releases.Assign issues to milestones to ensure that all tasks required for a release are completed on time.
+-Automate Workflow:Use GitHub Actions to automate parts of the workflow. For example, you can automatically move issues to the In Progress column when a pull request is created or to the Done column when a pull request is merged.
+
+Examples of Enhancing Collaborative Efforts
+-Open Source Projects:In open-source projects, issues and project boards help manage contributions from the community. Contributors can report bugs, propose features, and track the status of their contributions.Project boards provide transparency, allowing contributors to see what work is in progress and where they can help.
+-Agile Development:In Agile teams, project boards are used to manage sprints. Issues represent user stories or tasks, and the board reflects the sprint backlog, work in progress, and completed work.Daily stand-ups can be conducted using the project board to discuss progress and blockers.
+-Cross-Functional Teams:In cross-functional teams, project boards help coordinate work across different disciplines (e.g., development, design, QA). Issues can be assigned to different team members, and the board provides a shared view of the project’s status.Labels and milestones help prioritize work and ensure that all aspects of the project are progressing in sync.
+
+
+
+  
